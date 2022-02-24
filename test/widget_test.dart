@@ -29,5 +29,8 @@ void main() {
     await tester.tap(find.byIcon(Icons.add));
     await tester.pump();
     expect(find.text('2'), findsOneWidget);
+    await tester.tap(find.byIcon(Icons.add));
+    await tester.pump();
+    expect(find.text('3'), findsOneWidget);
   });
 }
